@@ -1,0 +1,95 @@
+body {
+    background-image: url(../img/1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+.box {
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid tomato;
+    box-shadow: 0 0 15px #F7C705;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.button {
+    display: block;
+    background-color: yellowgreen;
+    color: black;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    padding: 5% 6%;
+    cursor: pointer;
+    font-family: Times, serif;
+    font-size: 26px;
+}
+.button:active {
+    animation: pulse 0.5s;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.userName, .computerName {
+    text-align: center;
+    font-family: Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    text-shadow: 0 0 5px white;
+}
+.firstDiv, .elements, .secondDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+}
+.userScore, .computerScore {
+    background-image: linear-gradient(300deg, wheat, grey);
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px wheat;
+    margin-top: 10px;
+    text-align: center;
+    font-family: Times, serif;
+    font-size: 26px;
+    display: none;
+}
+.userCards, .computerCards {
+    margin-top: 10px;
+}
+.rounds {
+    font-family: Times, serif;
+    font-size: 26px;
+    font-style: oblique;
+    padding: 20px;
+}
+.winner {
+    font-family: Times, serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
